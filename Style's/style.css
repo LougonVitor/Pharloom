@@ -1,0 +1,627 @@
+/*Fontes*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+@font-face {
+    font-family: 'geek';
+    src: url(../fontes/geek.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'seagram';
+    src: url(../fontes/Seagram.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+/*Fontes*/
+
+/*Barra de rolagem*/
+::-webkit-scrollbar {
+    width: 1vw;
+    background-color: #262727;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #fdfbfe;
+    border-radius: 5px;
+    border: 1px solid #262727;
+}
+/*Barra de rolagem*/
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    font-size: 100%;
+    font-family: 'seagram', sans-serif;
+    overflow-x: hidden;
+    color: #fdfbfe;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: black;
+}
+
+header {
+    width: 100vw;
+    background: transparent;
+    position: fixed;
+    padding: 20px 0px;
+    transition: .3s;
+    z-index: 2;
+}
+
+.spanMenu {
+    display: flex;
+    align-items: center;
+    padding-right: 5px;
+}
+
+.content--menu {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1600px;
+    width: 95%;
+    margin: auto;
+    letter-spacing: 2px;
+}
+
+.menu--preto {
+    width: 100vw;
+    background: black;
+    padding: 15px 0px;
+    transition: .3s;
+}
+
+#menuEu {
+    display: flex;
+    align-items: center;
+
+}
+
+#menuEu h1 {
+    display: flex;
+    align-items: center;
+}
+
+#imgPerfil {
+    width: 90px;
+}
+
+.content--menu h1 {
+    font-family: 'seagram', sans-serif;
+    font-size: 2.3rem;
+    padding-left: 20px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a:hover {
+    transition: .3s;
+    text-decoration: underline #fdfbfe;
+    transform: scale(1.05, 1.05);
+}
+
+.menu--links {
+    text-decoration: none;
+    color: #fdfbfe;
+    padding: 0px 10px;
+}
+
+.menu--svg {
+    padding: 0px 10px;
+}
+
+/*Começo da estilização da parte principal (main)*/
+
+main {
+    width: 100vw;
+}
+
+#inicio {
+    width: 100%;
+    position: relative;
+    height: 90vh;
+    overflow: hidden;
+    /* background: url(IMGs/fundo\ 1.jpg) no-repeat;
+    background-size: 100%;
+    background-position: 5px;
+    -webkit-filter: blur(5px);
+    height: 78vh; */
+}
+
+.fundo--inicio {
+    top: -600px;
+    position: absolute;
+    z-index: -1;
+    filter: blur(8px);
+    width: 100vw;
+}
+
+.content--inicio {
+    padding: 38vh 0px 0px 0px;
+    align-items: center;
+    display: flex;
+    max-width: 1600px;
+    width: 95%;
+    margin: auto;
+}
+
+.aside--inicio {
+    text-align: left;
+    color: #fdfbfe;
+    width: 500px;
+}
+
+.text--aside {
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+}
+
+.foto--perfil {
+    border-radius: 50%;
+    width: 250px;
+    border: solid 1px #fdfbfe;
+    bottom: 0;
+
+}
+
+.content--inicio button {
+    font-family: 'seagram', sans-serif;
+    background-color: #fdfbfe;
+    width: 320px;
+    height: 70px;
+    border: none;
+    font-size: 1.3rem;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: .5s;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.content--inicio a {
+    text-decoration: none;
+}
+
+.content--inicio img {
+    width: 40px;
+}
+
+.content--inicio button:hover {
+    transition: .5s;
+    transform: scale(1.05);
+    border-radius: 40px;
+}
+
+.featured2 {
+    padding: 0px 0px 0px 0px;
+    max-width: 1600px;
+    margin: auto;
+    width: 95vw;
+    left: 2.5vw;
+}
+
+.contentFeatured2 {
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    background-color: rgba(132, 131, 131, 0.035);
+}
+
+.featuredLine {
+    background-color: #fdfbfe;
+    border: none;
+    height: 1px;
+    width: 100%;
+    margin: auto;
+}
+
+
+#featured {
+    max-width: 1600px;
+    width: 95%;
+    margin: auto;
+}
+
+.content-gallery.featured {
+    display: flex;
+    justify-content: center;
+}
+
+.img--new {
+    height: 500px;
+    width: 400px;
+    border: solid 1px #fdfbfe;
+}
+
+#im3 {
+    margin: 0px 40px 0px 40px;
+}
+
+#im1, #im2 {
+    transform: scale(.90);
+}
+
+.h1--hover {
+    text-align: center;
+    padding: 20px;
+    font-size: 3rem;
+}
+
+.p--hover {
+    text-align: center;
+    padding: 20px;
+    font-size: 2rem;
+}
+
+.hoverDiv1, 
+.hoverDiv2, 
+.hoverDiv3{
+    display: none;
+    background-color: rgba(0, 0, 0, 0.748);
+    height: 500px;
+    width: 400px;
+    transform: scale(.89);
+    position: absolute;
+    z-index: 1;
+    animation: hoverDivs .3s linear;
+} .hoverDiv2 {
+    transform: scale(.99);
+}
+
+.hoverDiv2 {
+    margin-left: 40px;
+}
+
+.divNewCollections2, 
+.divNewCollections2, 
+.divNewCollections3{
+    position: relative;
+}
+
+@keyframes hoverDivs {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+/*inicio da estiliazção das galerias*/
+#gallery {
+    width: 100%;
+}
+
+.second--scream {
+    text-align: center;
+}
+
+abbr {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.img--gallery:hover {
+    transform: scale(1.05);
+    transition: .3s;
+    border-radius: 5px;
+}
+
+.apresentação--gallery {
+    max-width: 1600px;
+    width: 95%;
+    margin: auto;
+    font-size: 1.8rem;
+}
+
+.text--apresentação {
+    text-align: center;
+    font-size: 2.3rem;
+    padding: 50px 0px;
+}
+
+.linha {
+    background-color: #fdfbfe;
+    border: none;
+    height: 1px;
+    margin: 50px 0px;
+}
+
+/*Linha que separa as seções da galeria*/
+.content--arts {
+    margin-top: 100px;
+}
+
+.content-gallery {
+    margin-top: 30px;
+}
+
+.content--arts h1 {
+    font-family: 'geek';
+}
+
+/*.linha--seção {
+    background-color: #fdfbfe;
+    border: none;
+    height: 1px;
+    width: 400px;
+}*/
+
+.img--gallery {
+    height: 415px;
+    width: 332px;
+    margin: 0px 40px 20px 0px;
+    border: solid 1px #fdfbfe;
+    transition: .3s;
+}
+
+.vid--gallery {
+    height: 415px;
+    width: 332px;
+    margin: 0px 40px 20px 0px;
+    border: solid 1px #fdfbfe;
+    transition: .3s;
+    overflow: hidden;
+}
+
+.teste {
+    zoom: 2;
+}
+
+.button--gallery {
+    font-family: 'seagram', sans-serif;
+    font-size: 1.2rem;
+    width: 330px;
+    height: 50px;
+    background-color: #fdfbfe;
+    border: none;
+    cursor: pointer;
+    transition: .5s;
+}.button--gallery:hover {
+    transition: .5s;
+    transform: scale(1.07);
+    border-radius: 15px;
+}
+
+footer {
+    margin-top: 4vh;
+    background-color: #fdfbfe;
+}
+
+#gmail {
+    max-width: 1600px;
+    width: 95%;
+    margin: auto;
+    color: black;
+    height: 35vh;
+    display: flex;
+    align-items: center;
+}
+
+.content--gmail {
+    text-align: center;
+    margin: auto;
+}
+
+#gmail h1 {
+    font-size: 3rem;
+}
+#gmail h2 {
+    font-size: 2rem;
+}
+
+#end {
+    background-color: black;
+}
+
+.end {
+    max-width: 1600px;
+    width: 95%;
+    margin: auto;
+    height: 35vh;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.alinhador {
+    text-align: center;
+    margin: auto;
+}
+
+/*display none*/
+.none {
+    display: none;
+}
+/*display none*/
+
+
+/*Responsivo*/
+
+@media (max-width: 1588px) {
+    .content--arts {
+        text-align: center
+    }
+
+    .img--gallery {
+        margin: 0px 10px 20px 10px;
+    }
+
+    .fundo--inicio {
+        top: -400px;
+    }
+    .img--new {
+        height: 350px;
+        width: 280px;
+        margin: 0px 40px 20px 0px;
+        border: solid 1px #fdfbfe;
+    }
+
+    .hoverDiv1,
+    .hoverDiv2, 
+    .hoverDiv3 {
+        display: none;
+        background-color: rgba(0, 0, 0, 0.748);
+        height: 350px;
+        width: 280px;
+        transform: scale(.89);
+        position: absolute;
+        z-index: 1;
+        animation: hoverDivs .3s linear;
+    }.hoverDiv2 {
+        transform: scale(.99);
+    }
+
+    .h1--hover {
+        text-align: center;
+        padding: 20px;
+        font-size: 2.5rem;
+    }
+    
+    .p--hover {
+        text-align: center;
+        padding: 20px;
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 1100px) {
+    .img--new {
+        height: 320px;
+        width: 256px;
+        margin: 0px 40px 20px 0px;
+        border: solid 1px #fdfbfe;
+    }
+
+    .hoverDiv1,
+    .hoverDiv2, 
+    .hoverDiv3 {
+        display: none;
+        background-color: rgba(0, 0, 0, 0.748);
+        height: 320px;
+        width: 256px;
+        transform: scale(.89);
+        position: absolute;
+        z-index: 1;
+        animation: hoverDivs .3s linear;
+    }.hoverDiv2 {
+        transform: scale(.99);
+    }
+
+    .h1--hover {
+        text-align: center;
+        padding: 20px;
+        font-size: 2rem;
+    }
+    
+    .p--hover {
+        text-align: center;
+        padding: 20px;
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    html {
+        font-size: 90%;
+    }
+
+    .fundo--inicio {
+        top: -300px;
+    }
+
+    .agrupante3 {
+        margin: auto;
+    }
+
+    .aside--inicio {
+        text-align: center;
+        margin: auto;
+    }
+}
+
+/*Toggle*/
+@media (max-width: 900px) {
+    .content-gallery.featured {
+        flex-direction: column;
+        margin: auto;
+        text-align: center;
+    }
+
+    .img--new {
+        margin: 0px 0px 0px 0px;
+    }
+
+    .divNewCollections1,
+    .divNewCollections2,
+    .divNewCollections3 {
+        margin: auto;
+    }
+
+    .menu--links {
+        display: none;
+    }
+}
+
+
+
+@media (max-width: 700px) {
+    html {
+        font-size: 85%;
+    }
+
+    .fundo--inicio {
+        top: -100px;
+    }
+}
+
+@media (max-width: 500px) {
+    html {
+        font-size: 75%;
+    }
+    .fundo--inicio {
+        top: 0px;
+    }
+
+    .img--gallery {
+        height: 350px;
+        width: 280px;
+    }
+
+    .button--gallery {
+        width: 280px;
+        height: 45px;
+    }
+
+    .content--inicio button {
+        width: 250px;
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 65%;
+    }
+    .fundo--inicio {
+        top: 50px;
+    }
+    #imgPerfil {
+        width: 60px;
+    }
+}

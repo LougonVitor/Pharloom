@@ -1,0 +1,404 @@
+/*Fontes*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+@font-face {
+    font-family: 'geek';
+    src: url(../fontes/geek.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'seagram';
+    src: url(../fontes/Seagram.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+/*Fontes*/
+
+/*Barra de rolagem*/
+::-webkit-scrollbar {
+    width: 1vw;
+    background-color: #262727;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #fdfbfe;
+    border-radius: 5px;
+    border: 1px solid #262727;
+}
+/*Barra de rolagem*/
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    font-size: 100%;
+    font-family: 'seagram', sans-serif;
+    overflow-x: hidden;
+    color: #fdfbfe;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: black;
+}
+
+header {
+    width: 100vw;
+    height: 40vh;
+    position: relative;
+}
+
+.fundo--inicio {
+    position: absolute;
+    width: 100vw;
+    z-index: -99;
+    top: -600px;
+}
+
+.contemporary {
+    top: -800px;
+    filter: blur(2px);
+}
+
+.universyFundo {
+    filter: blur(8px);
+}
+
+.skull {
+    top: -1200px;
+    filter: blur(5px);
+}
+
+.motorized {
+    top: -1000px;
+    filter: blur(5px);
+}
+
+.grafite {
+    filter: blur(5px);
+    top: -600px;
+}
+
+/*Começo da estilização da parte principal (main)*/
+
+main {
+    width: 100vw;
+    background-color: black;
+}
+
+/*inicio da estiliazção das galerias*/
+#gallery {
+    width: 100%;
+}
+
+.text--over {
+    margin: auto;
+    font-size: 4rem;
+    text-align: center;
+    padding-top: 50px;
+}
+
+abbr {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.img--gallery:hover {
+    transform: scale(1.05);
+    transition: .3s;
+    border-radius: 5px;
+}
+
+.apresentação--gallery {
+    max-width: 1600px;
+    width: 95%;
+    margin: auto;
+    font-size: 1.8rem;
+}
+
+.text--apresentação {
+    text-align: center;
+    font-size: 2.3rem;
+}
+
+.linha {
+    background-color: #fdfbfe;
+    border: none;
+    height: 1px;
+    margin: 50px 0px;
+}
+
+/*Linha que separa as seções da galeria*/
+
+.content-gallery {
+    margin-top: 10px;
+}
+
+.content--arts {
+    text-align: center;
+}
+
+.content--arts h1 {
+    font-family: 'geek';
+}
+
+/*.linha--seção {
+    background-color: #fdfbfe;
+    border: none;
+    height: 1px;
+    width: 400px;
+}*/
+
+.img--gallery {
+    height: 415px;
+    width: 332px;
+    margin: 35px 35px 0px 0px;
+    border: solid 1px #fdfbfe;
+    transition: .3s;
+}
+
+.vid--gallery {
+    height: 415px;
+    width: 332px;
+    margin: 0px 40px 20px 0px;
+    border: solid 1px #fdfbfe;
+    transition: .3s;
+    overflow: hidden;
+}
+
+.teste {
+    zoom: 2;
+}
+
+.button--gallery {
+    font-family: 'seagram', sans-serif;
+    font-size: 1.2rem;
+    width: 330px;
+    height: 50px;
+    background-color: #fdfbfe;
+    border: none;
+    cursor: pointer;
+    transition: .5s;
+    margin: 20px 30px 30px 0px;
+}.button--gallery:hover {
+    transition: .5s;
+    transform: scale(1.07);
+    border-radius: 15px;
+}
+
+footer {
+    background-color: #fdfbfe;
+}
+
+#gmail {
+    max-width: 1600px;
+    width: 95%;
+    margin: auto;
+    color: black;
+    height: 35vh;
+    display: flex;
+    align-items: center;
+}
+
+.content--gmail {
+    text-align: center;
+    margin: auto;
+}
+
+#gmail h1 {
+    font-size: 3rem;
+}
+#gmail h2 {
+    font-size: 2rem;
+}
+
+#end {
+    background-color: black;
+}
+
+.end {
+    max-width: 1600px;
+    width: 95%;
+    margin: auto;
+    height: 35vh;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.alinhador {
+    text-align: center;
+    margin: auto;
+}
+
+/*display none*/
+.none {
+    display: none;
+}
+/*display none*/
+
+@media (max-width: 2100px) {
+    .skull {
+        top: -1500px;
+    }
+}
+
+@media (max-width: 1800px) {
+    .skull {
+        top: -1200px;
+    }
+}
+
+@media (max-width: 1536px) {
+    .content--arts {
+        text-align: center;
+    }
+
+    .universyFundo {
+        top: -500px;
+    }
+
+    .skull {
+        top: -950px;
+    }
+
+    .motorized {
+        top: -700px;
+    }
+
+    .grafite {
+        top: -400px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .content--arts {
+        text-align: center;
+    }
+
+    .universyFundo {
+        top: -300px;
+    }
+
+    .contemporary {
+        top: -300px;
+    }
+
+    .skull {
+        top: -800px;
+    }
+
+    .motorized {
+        top: -600px;
+    }
+
+    .grafite {
+        top: -300px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .skull {
+        top: -600px;
+    }
+    .motorized {
+        top: -400px;
+    }
+}
+
+@media (max-width: 710px) {
+    .content--arts {
+        text-align: center;
+    }
+
+    .img--gallery {
+        width: 280px;
+        height: 350px;
+        margin: 20px 10px 0px 10px;
+    }
+
+    .universyFundo {
+        top: -200px;
+    }
+
+    .contemporary {
+        top: -200px;
+    }
+
+    .button--gallery {
+        width: 200px;
+        height: 40px;
+        margin: 20px 0px 20px 0px;
+    }
+
+    .skull {
+        top: -200px;
+    }
+
+    .motorized {
+        top: -200px;
+    }
+
+    .grafite {
+        top: -100px;
+    }
+}
+
+@media (max-width: 500px) {
+    html {
+        font-size: 80%;
+    }
+
+    .content--arts {
+        text-align: center;
+    }
+
+    .universyFundo {
+        top: -100px;
+    }
+
+    .contemporary {
+        top: -100px;
+    }
+
+    .skull {
+        top: -100px;
+    }
+
+    .motorized {
+        top: -100px;
+    }
+
+    .grafite {
+        top: 0px;
+    }
+}
+
+@media (max-width: 400px) {
+    .content--arts {
+        text-align: center;
+    }
+
+    .universyFundo {
+        top: 0px;
+    }
+
+    .contemporary {
+        top: 0px;
+    }
+
+    .skull {
+        top: 0px;
+    }
+
+    .motorized {
+        top: 0px;
+    }
+}
